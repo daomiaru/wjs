@@ -1,0 +1,396 @@
+/*京东红*/
+/*@baseColor: #e92322;*/
+/*头部样式*/
+.wjs_header {
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #ccc;
+}
+.wjs_header > .container > .row > .col-md-2 {
+  border-right: 1px solid #ccc;
+}
+.wjs_header > .container > .row > .col-md-2 > a {
+  position: relative;
+  display: block;
+}
+.wjs_header > .container > .row > .col-md-2 > a > span:nth-of-type(1) {
+  color: #0f0f0f;
+}
+.wjs_header > .container > .row > .col-md-2 > a > span:nth-of-type(2) {
+  color: #0f0f0f;
+}
+.wjs_header > .container > .row > .col-md-2 > a > span:nth-of-type(3) {
+  color: #0f0f0f;
+}
+.wjs_header > .container > .row > .col-md-2 > a > img {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 49px;
+  transform: translateX(-50%);
+  border: 1px solid #ccc;
+  border-top: none;
+  z-index: 1;
+}
+.wjs_header > .container > .row > .col-md-2 > a:hover > img {
+  display: block;
+}
+.wjs_header > .container > .row > .col-md-5 {
+  border-right: 1px solid #ccc;
+}
+.wjs_header > .container > .row > .col-md-5 > a {
+  color: #0f0f0f;
+}
+.wjs_header > .container > .row > .col-md-2 {
+  border-right: 1px solid #ccc;
+}
+.wjs_header > .container > .row > .md > span > a {
+  color: #0f0f0f;
+}
+.wjs_header > .container > .row > .col-md-3 > .btn-danger {
+  background-color: #e92322;
+  border-color: #e92322;
+}
+.wjs_header > .container > .row > .col-md-3 > .btn {
+  padding: 3px 15px;
+}
+.wjs_header > .container > .row > .col-md-3 > .btn-link {
+  color: #0f0f0f;
+}
+/*导航条样式*/
+.wjs_nav {
+  /*注意这里如果要设置固定高度的话应该在子元素设置，否则切换到移动端时下拉项会溢出*/
+}
+.wjs_nav.navbar {
+  margin-bottom: 0;
+}
+.wjs_nav .navbar-brand {
+  height: 80px;
+  line-height: 50px;
+}
+.wjs_nav .navbar-brand > span:nth-of-type(1) {
+  font-size: 40px;
+  color: #e92322;
+}
+.wjs_nav .navbar-brand > span:nth-of-type(2) {
+  font-size: 40px;
+  color: #333;
+}
+.wjs_nav .navbar-header > .navbar-toggle {
+  margin-top: 19px;
+}
+.wjs_nav .navbar-nav > li > a {
+  height: 80px;
+  line-height: 50px;
+}
+.wjs_nav .navbar-nav > li > a:hover {
+  background-color: transparent;
+  border-bottom: 3px solid #e92322;
+}
+.wjs_nav .navbar-nav > .active > a,
+.wjs_nav .navbar-nav > .active a:hover,
+.wjs_nav .navbar-nav > .active a:focus {
+  background-color: transparent;
+  border-bottom: 3px solid #e92322;
+}
+/*轮播样式*/
+.moblie {
+  width: 100%;
+  display: block;
+}
+/*使用img标签来设置图片大小随着width的减少自适应缩减*/
+.moblie > img {
+  width: 100%;
+  display: block;
+}
+/*轮播PC端样式*/
+.PC {
+  /*PC端图片居中，随着width的增加，图片宽度增加高度不变*/
+  background-position: center center;
+  display: block;
+  height: 470px;
+  width: 100%;
+  background-size: cover;
+}
+/*信息块样式*/
+.info {
+  padding: 30px;
+}
+.info .media > span {
+  font-size: 30px;
+}
+.info .row .media {
+  margin-top: 20px;
+}
+.info .row .media > a:hover {
+  color: #e92322;
+}
+.info .row .media-body > h4 {
+  font-size: 24px;
+}
+/*预约块样式*/
+.subscribe {
+  height: 80px;
+  line-height: 80px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.subscribe span {
+  font-size: 20px;
+}
+.subscribe .col-sm-9 a:nth-of-type(1):hover {
+  color: #e92322;
+}
+.subscribe .col-sm-9 a:nth-of-type(2) {
+  color: #e92322;
+  border-bottom: 1px dashed #e92322;
+}
+.subscribe .col-sm-3 a:hover {
+  color: #e92322;
+}
+/*产品块样式*/
+.wjs_product {
+  clear: both;
+  padding: 20px;
+  background-color: #eee;
+  /*导航项样式*/
+  /*产品内容面板样式*/
+}
+.wjs_product .tab-parent {
+  width: 100%;
+  overflow: hidden;
+}
+.wjs_product .nav-tabs > li {
+  margin-bottom: 0px;
+  padding: 0px 15px;
+}
+.wjs_product .nav-tabs > li > a {
+  font-size: 18px;
+  line-height: 50px;
+  border: none;
+  background-color: transparent;
+}
+.wjs_product .nav-tabs > li > a:hover {
+  border-bottom: 3px solid #e92322;
+}
+.wjs_product .nav-tabs > li.active > a,
+.wjs_product .nav-tabs > li.active a:hover,
+.wjs_product .nav-tabs > li.active a:focus {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  border-bottom: 3px solid #e92322;
+}
+.wjs_product .product {
+  background-color: white;
+  margin-top: 20px;
+}
+.wjs_product .product .product_left {
+  font-size: 12px;
+  margin-right: 100px;
+}
+.wjs_product .product .product_left span {
+  display: inline-block;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+}
+.wjs_product .product .product_left .row {
+  margin-top: 8px;
+  margin-right: 0px;
+  margin-left: -8px;
+}
+.wjs_product .product .product_left .row div:nth-of-type(2) {
+  text-align: right;
+}
+.wjs_product .product .product_left .row div:nth-of-type(4) {
+  text-align: right;
+}
+.wjs_product .product .product_right {
+  border-left: 1px dashed #ccc;
+  height: 140px;
+  width: 100px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: center;
+  padding-top: 30px;
+}
+.wjs_product .product .product_right > .baobei {
+  width: 100%;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 18px;
+  transform: translateX(-50%);
+}
+.wjs_product .product .product_right > .baobei > span:nth-of-type(1) {
+  color: #e92322;
+  border: 1px solid #e92322;
+}
+.wjs_product .product .product_right > .baobei > span:nth-of-type(2) {
+  color: #2aabd2;
+  border: 1px solid #2aabd2;
+}
+.wjs_product .product .product_right > span {
+  font-size: 40px;
+  font-weight: bold;
+  color: #e92322;
+}
+.wjs_product .product .product_right > sub {
+  bottom: 0px;
+  color: #e92322;
+}
+.wjs_product .product .product_right::before,
+.wjs_product .product .product_right::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #eee;
+  position: absolute;
+  left: -5px;
+}
+.wjs_product .product .product_right::before {
+  top: -5px;
+  box-shadow: 0px -1px 1px #ddd inset;
+}
+.wjs_product .product .product_right::after {
+  bottom: -8px;
+  box-shadow: 0px -1px 1px #ddd;
+}
+.wjs_product .product.active {
+  background-color: #e92322;
+}
+.wjs_product .product.active .product_right {
+  color: white;
+}
+.wjs_product .product.active .product_right > span {
+  color: white;
+}
+.wjs_product .product.active .product_right > sub {
+  color: white;
+}
+.wjs_product .product.active .product_left > span {
+  color: white;
+}
+.wjs_product .product.active .product_left p {
+  color: white;
+}
+.wjs_product .product.active .product_left::before {
+  content: "\e915";
+  color: white;
+  font-family: "wjs";
+  position: absolute;
+  font-size: 25px;
+  top: 15px;
+}
+/*新闻块样式*/
+.news {
+  margin-top: 30px;
+}
+.news .news_title {
+  line-height: 50px;
+  font-size: 30px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+.news .row > .title > h1:nth-of-type(2) {
+  margin-top: 55px;
+}
+.news .row > .title > h1:nth-of-type(3) {
+  margin-top: 70px;
+}
+.news .row > .title > h1:nth-of-type(4) {
+  margin-top: 80px;
+}
+.news .news_title::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 46px;
+  right: -6px;
+}
+.news .news_line {
+  width: 1px;
+  height: 100%;
+  border-left: 1px dashed #e92322;
+  position: absolute;
+  top: 0;
+  left: 47px;
+}
+.news .nav-tabs {
+  border-bottom: none;
+  /*使用媒体查询设置768-992 li标签的样式*/
+  /*设置宽度小于768时li标签的样式*/
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .news .nav-tabs > li {
+    padding: 20px 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .news .nav-tabs > li {
+    padding: 20px 0px;
+    width: 25%;
+  }
+}
+.news .nav-tabs > li:nth-of-type(4) > a {
+  margin-bottom: 0;
+}
+.news .nav-tabs > li > a {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid #cccccc;
+  margin-bottom: 50px;
+  background-color: #cccccc;
+}
+.news .nav-tabs > li > a:hover {
+  border: none;
+  background-color: #e92322;
+}
+.news .nav-tabs > li.active > a,
+.news .nav-tabs > li.active a:hover,
+.news .nav-tabs > li.active a:focus {
+  background-color: #e92322;
+  border: none;
+}
+.news .nav-tabs > li .wjs_icon {
+  font-size: 35px;
+  color: white;
+}
+.news .ul1 > li {
+  width: 100%;
+  list-style: none;
+  margin-bottom: 30px;
+}
+.news .ul1 > li > a {
+  line-height: 20px;
+  font-size: 16px;
+}
+/*底部样式*/
+.friend {
+  padding: 30px;
+  background-color: #ccc;
+  text-align: center;
+}
+.friend h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.friend ul {
+  display: inline-block;
+  list-style: none;
+}
+.friend ul > li {
+  margin-left: 20px;
+  float: left;
+  font-size: 80px;
+}
+/*# sourceMappingURL=wjs_index.css.map */
